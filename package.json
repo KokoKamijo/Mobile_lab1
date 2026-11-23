@@ -8,6 +8,7 @@
   "scripts": {
     "seed": "node db/seed.js",
     "build:ssg": "node scripts/build-ssg.js",
+    "build:pages": "npm run setup && node scripts/build-pages.js",
     "setup": "npm run seed && npm run build:ssg",
     "start": "node server.js"
   },

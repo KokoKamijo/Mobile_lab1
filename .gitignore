@@ -1,3 +1,4 @@
 node_modules/
 data/*.db
 public/ssg/index.html
+dist/
