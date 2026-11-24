@@ -22,7 +22,7 @@ app.get('/ssr', (req, res) => {
 });
 
 // API สำหรับ CSR: ส่งข้อมูลเป็น JSON ให้เบราว์เซอร์สร้าง HTML เอง
-app.get('/api/products', (req, res) => {
+app.get(['/api/products', '/api/products.json'], (req, res) => {
   res.set('Cache-Control', 'no-store');
   res.json(getProducts());
 });

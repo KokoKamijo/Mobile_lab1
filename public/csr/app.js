@@ -11,7 +11,7 @@ function el(tag, className, text) {
 
 async function loadProducts() {
   try {
-    const response = await fetch('/api/products');
+    const response = await fetch(document.body.dataset.productsUrl);
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const products = await response.json();
 
